@@ -2,3 +2,5 @@
 .market-checks{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}.market-checks label{display:flex;align-items:center;gap:7px}.market-checks input{width:auto}.record a{color:#0878c9;text-decoration:underline}
 
 .retention-notice{font-size:.88rem;color:#52657b;line-height:1.6;margin:8px 0 18px}
+
+.btn:active,button:active{transform:scale(.97);filter:brightness(.77)}.btn:focus-visible,button:focus-visible{outline:3px solid #064f9a;outline-offset:3px}.btn:disabled,button:disabled{opacity:.6;cursor:wait}.date-filter{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0 24px}.date-filter label{font-weight:700}.date-filter input{padding:12px;border:1px solid #c8d3df;border-radius:8px}.day-empty{padding:18px;border-radius:8px;background:#f1f6fc;color:#263b53}
