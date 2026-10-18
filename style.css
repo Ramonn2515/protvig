@@ -50,3 +50,15 @@
 .chart-summary{display:flex;align-items:baseline;gap:10px;padding:10px 0}.chart-summary strong{font-size:32px;color:#0c70bb}.chart-summary span{font-size:13px;color:#60758d}
 .bar-chart{height:260px;display:flex;gap:8px;align-items:stretch;padding:12px 4px 8px;overflow-x:auto;border-bottom:1px solid #dce4ef}.bar-column{min-width:42px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}.bar-value{font-size:12px;color:#426180;font-weight:700}.bar-track{height:190px;width:min(100%,45px);display:flex;align-items:flex-end;background:#edf3fa;border-radius:7px 7px 0 0;overflow:hidden}.bar-fill{width:100%;min-height:0;background:linear-gradient(180deg,#30a7f4,#0861b3);border-radius:6px 6px 0 0;transition:height .3s}.bar-label{font-size:10px;color:#64768d;white-space:nowrap;text-align:center;min-height:30px}.report-note{font-size:12px;color:#5a708a;margin:14px 0 0}
 @media(max-width:600px){.calendar-dialog{padding:10px}.bar-chart{gap:5px}.bar-column{min-width:44px}.report-controls>div{min-width:130px}}
+
+/* Navegação por seções do painel e resumo mensal */
+.stats .stat-link{position:relative;display:flex;flex-direction:column;align-items:flex-start;text-align:left;width:100%;height:100%;min-width:0;padding:inherit;border:0;border-radius:inherit;background:transparent;color:inherit;cursor:pointer;font:inherit}
+.stats .stat-link:hover{background:rgba(21,120,206,.06)}
+.stats .stat-link small{display:block;margin-top:9px;font-size:11px;font-weight:400;line-height:1.45;color:#667d96}
+.stats .stat-unread{position:absolute;right:10px;top:10px;display:flex;align-items:center;justify-content:center;min-width:23px;height:23px;border-radius:999px;padding:0 5px;background:#1176e8;color:#fff;font-size:11px;font-weight:800;box-shadow:0 2px 8px #1475cf44}
+.dashboard-shortcuts{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 26px}
+.dashboard-back{margin:4px 0 18px}
+.history-month-filter{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px;margin:18px 0 8px}
+.history-month-filter label{font-size:13px;font-weight:700;align-self:center}
+.history-month-filter select{width:auto;min-width:205px;max-width:100%;text-transform:capitalize}
+.history-month-filter span{font-size:12px;color:#5c7590;padding-bottom:10px}
