@@ -35,3 +35,18 @@
 .protvig-calendar .calendar-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
 .protvig-calendar .legend-blue{background:#1476eb}.protvig-calendar .legend-green{background:#20bf88}.protvig-calendar .legend-gray{background:#596b83}.protvig-calendar .legend-today{background:#fff;border:2px solid #398cf6}
 @media(max-width:480px){.protvig-calendar{padding:12px;border-radius:15px}.protvig-calendar .calendar-days{gap:3px}.protvig-calendar .calendar-day{height:46px;min-height:46px;font-size:13px}.protvig-calendar .calendar-title small{font-size:10px}.protvig-calendar .calendar-nav button{height:34px;width:34px}.protvig-calendar .calendar-legend{padding:10px;gap:9px}}
+
+/* ProtVig: painel compacto e relatórios */
+.client-overview h2,.reports-panel h2{display:flex;align-items:center;gap:10px}
+.client-market-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.client-market{border:1px solid #dce5f0;background:#f8fbff;padding:18px;border-radius:14px;display:flex;flex-direction:column;gap:12px;justify-content:space-between}
+.client-market strong{display:block;font-size:18px;color:#142238;margin-bottom:6px}.client-market span{display:block;font-size:13px;color:#526b87}
+.upgrade-link{background:transparent;text-align:left;padding:0;font-size:12px;color:#1977b8;font-weight:600;cursor:pointer}
+.history-toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 22px}
+.calendar-overlay{position:fixed;inset:0;z-index:200;background:rgba(5,15,30,.7);display:flex;align-items:center;justify-content:center;padding:18px;overflow:auto}
+.calendar-dialog{width:min(100%,660px);max-height:calc(100vh - 30px);overflow:auto;background:#fff;border-radius:20px;padding:16px;box-shadow:0 22px 90px rgba(0,0,0,.3)}
+.calendar-dialog .protvig-calendar{max-width:none;box-shadow:none}.dialog-heading{display:flex;align-items:center;justify-content:space-between;padding:4px 4px 15px;color:#162d48}.dialog-heading strong{font-size:18px}.dialog-heading button{background:#eef3fa;border-radius:10px;width:36px;height:36px;display:grid;place-items:center;color:#243a58}.dialog-footer{padding-top:12px;display:flex;justify-content:flex-end}
+.report-controls{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}.report-controls>div{flex:1;min-width:190px}.report-controls label{display:block;font-size:12px;font-weight:700;margin-bottom:8px}.report-controls select{width:100%}
+.chart-summary{display:flex;align-items:baseline;gap:10px;padding:10px 0}.chart-summary strong{font-size:32px;color:#0c70bb}.chart-summary span{font-size:13px;color:#60758d}
+.bar-chart{height:260px;display:flex;gap:8px;align-items:stretch;padding:12px 4px 8px;overflow-x:auto;border-bottom:1px solid #dce4ef}.bar-column{min-width:42px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}.bar-value{font-size:12px;color:#426180;font-weight:700}.bar-track{height:190px;width:min(100%,45px);display:flex;align-items:flex-end;background:#edf3fa;border-radius:7px 7px 0 0;overflow:hidden}.bar-fill{width:100%;min-height:0;background:linear-gradient(180deg,#30a7f4,#0861b3);border-radius:6px 6px 0 0;transition:height .3s}.bar-label{font-size:10px;color:#64768d;white-space:nowrap;text-align:center;min-height:30px}.report-note{font-size:12px;color:#5a708a;margin:14px 0 0}
+@media(max-width:600px){.calendar-dialog{padding:10px}.bar-chart{gap:5px}.bar-column{min-width:44px}.report-controls>div{min-width:130px}}
