@@ -109,3 +109,31 @@ header{background:#081b30;border-bottom:2px solid #b9954f}
 .admin-market-entry small{font-size:11px;color:#718399}
 .admin-client-markets p{margin:0;font-size:12px}
 .account-photo-preview strong{overflow-wrap:anywhere}
+
+/* Tema escuro integral: painel do cliente e administrativo */
+.dashboard{background:radial-gradient(ellipse at 78% 4%,#193e62 0%,#0b2745 46%,#07192d 100%)!important;color:#ecf3fc;min-height:calc(100vh - 80px)}
+.dashboard .dash-heading h1,.dashboard .panel h2,.dashboard .panel h3,.dashboard .market-selector .market-identity h2{color:#f6f8fd!important}
+.dashboard .dash-heading p,.dashboard .panel p,.dashboard .panel small,.dashboard .panel label,.dashboard .market-subtitle,.dashboard .stats span,.dashboard .stats small{color:#b6c9dd!important}
+.dashboard .kicker{color:#d6ae67!important}
+.dashboard .panel{background:linear-gradient(130deg,#102f4e,#0b233d)!important;border:1px solid #36536f!important;box-shadow:0 14px 35px #030d1b50!important;color:#edf4fc}
+.dashboard .market-selector{background:linear-gradient(110deg,#133859,#0b253f)!important;border:1px solid #3c5972!important;border-left:5px solid #c9a45d!important}
+.dashboard .stats>div,.dashboard .stats>button{background:linear-gradient(145deg,#133755,#0c2946)!important;border:1px solid #3b5670!important;border-top:3px solid #c9a45d!important;box-shadow:0 9px 26px #030d1b42!important;color:#f2f7ff}
+.dashboard .stats strong,.dashboard .stats svg,.dashboard .panel h2 svg{color:#e5bf78!important}
+.dashboard .stats>button.stat-link:hover{background:#1a466c!important;border-color:#c9a45d!important}
+.dashboard .dashboard-shortcuts .btn,.dashboard .btn.ghost-dark{background:#123654!important;border:1px solid #5b7690!important;color:#f3f7fd!important}
+.dashboard .dashboard-shortcuts .btn:hover,.dashboard .btn.ghost-dark:hover{background:#1e4d72!important;border-color:#c9a45d!important}
+.dashboard input:not([type=file]),.dashboard select,.dashboard textarea{background:#f7fafd!important;color:#112e4b!important;border:1px solid #88a7c3!important}
+.dashboard input::placeholder,.dashboard textarea::placeholder{color:#687f95}
+.dashboard .market-selector select{background:#f8fbff!important;color:#102d4b!important}
+.dashboard .market-plan-note{background:#1b4562!important;color:#e8d5b3!important;border:1px solid #54718b!important}
+.dashboard .market-plan-note,.dashboard .market-selector .market-plan-note{color:#e8d5b3!important}
+.dashboard .admin-photo-card,.dashboard .admin-client-markets,.dashboard .admin-market-entry{background:#173a59;color:#f4f8ff;border-color:#42627d}
+.dashboard .admin-photo-card strong,.dashboard .admin-market-entry strong,.dashboard .account-photo-preview strong{color:#f4f8ff}
+.dashboard .admin-photo-trigger:hover,.dashboard .admin-photo-trigger[aria-expanded=true]{background:#215072}
+.dashboard .read-market,.dashboard .client-market{border-color:#42627d}
+.dashboard .bar-track{border-bottom-color:#8da6bf}
+.dashboard .bar-track:before{background:repeating-linear-gradient(to top,transparent 0,transparent calc(25% - 1px),#35536d calc(25% - 1px),#35536d 25%)}
+.dashboard .bar-fill{background:linear-gradient(180deg,#e0b56e,#a57a38)}
+.dashboard .bar-value,.dashboard .bar-label{color:#e9f2fc}
+.dashboard .notice{background:#193f60;color:#fff;border:1px solid #bd9b61}
+@media(max-width:600px){.dashboard{background:#0b2745!important}.dashboard .panel{padding:20px}}
