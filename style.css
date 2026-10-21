@@ -75,3 +75,37 @@
 
 /* Identidade azul-marinho e dourado ProtVig */
 .dashboard{background:linear-gradient(165deg,#f5f8fc,#eaf1f9)}.dashboard .panel{border:1px solid #d9e3ef;box-shadow:0 5px 20px #0b284009}.market-selector{border-left:5px solid #c9a45d!important}.market-selector .market-plan-note{display:inline-flex;align-items:center;gap:7px;background:#eef3f8;color:#35506a;font-weight:700}.active-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#18a565;box-shadow:0 0 0 3px #18a5651f}.stats>div:not(.quiet-stat),.stats>button{border-top:2px solid #c9a45d}.dashboard-shortcuts .btn{border:1px solid #c5d4e4;color:#113b5c;background:#f7faff}.dashboard-shortcuts .btn:hover{border-color:#c9a45d;background:#eaf2fa}.photo-upload-label{background:linear-gradient(125deg,#103957,#175785);border:1px solid #c9a45d55}.admin-photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px;margin-top:18px}.admin-photo-card{display:flex;align-items:center;flex-direction:column;text-align:center;gap:9px;background:#f6f9fc;border:1px solid #dbe5ef;border-radius:12px;padding:16px;overflow-wrap:anywhere}.admin-photo-card strong{font-size:13px;color:#173b58}.admin-photo-card small{color:#71839a}.account-photo-section+.account-photo-section{margin-top:22px}
+
+/* ProtVig: identidade institucional azul-marinho e dourado */
+:root{--pv-navy:#081d34;--pv-deep:#0b2846;--pv-blue:#154b77;--pv-gold:#c9a45d;--pv-gold-soft:#e5cf9d;color:#122b45;background:#edf2f8}
+body{background:#edf2f8}
+header{background:#081b30;border-bottom:2px solid #b9954f}
+.brand svg,.trust svg{color:#d7b46d}
+.blue,.hero h1 em{color:#e0bd76}
+.hero{background:radial-gradient(circle at 82% 26%,#19476b 0%,#0b2846 46%,#071728 100%)}
+.btn{background:#123d63;border:1px solid #b9954f55}.btn:hover{background:#1b547f}
+.btn.outline{color:#123d63;border-color:#b9954f}
+.dashboard{background:linear-gradient(145deg,#edf3fa,#e4ecf6)}
+.dashboard .panel{background:#fff;border:1px solid #cbd9e7;box-shadow:0 9px 30px #09213a0b}
+.dashboard .dash-heading h1,.dashboard .panel h2{color:#092642}
+.dashboard .kicker{color:#ad8541}
+.dashboard .stats>div,.dashboard .stats>button{background:#fff;border:1px solid #d4e0ed;border-top:3px solid #c9a45d;border-radius:14px;box-shadow:0 6px 20px #0c2b4810}
+.dashboard .stats strong{color:#0b3153}
+.dashboard .stat-link:hover{background:#edf4fb;border-color:#c9a45d}
+.dashboard-shortcuts .btn{background:#f7fafd;border:1px solid #bfcfe0;color:#0c3151}
+.dashboard-shortcuts .btn:hover{background:#e9f1fa;border-color:#c9a45d}
+.market-selector{border-left:5px solid #c9a45d!important;background:linear-gradient(110deg,#fff,#f5f9fd)!important}
+.market-avatar{border-color:#c9a45d!important}
+.market-plan-note{border:1px solid #d8e2eb}
+.admin-client-photos .admin-photo-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));align-items:start}
+.admin-client-group{min-width:0}
+.admin-photo-trigger{width:100%;min-height:185px;cursor:pointer;transition:transform .15s,border-color .15s;box-shadow:0 4px 15px #102d4610}
+.admin-photo-trigger:hover,.admin-photo-trigger[aria-expanded=true]{border-color:#c9a45d;transform:translateY(-2px);background:#eef5fc}
+.admin-client-markets{margin-top:10px;padding:12px;background:#f1f6fb;border:1px solid #d5e1ec;border-radius:12px}
+.admin-market-entry{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #dce6ee;flex-wrap:wrap}
+.admin-market-entry:last-child{border-bottom:0}
+.admin-market-entry .market-avatar{width:45px;height:45px;min-width:45px}
+.admin-market-entry strong{font-size:12px;flex:1;min-width:90px;overflow-wrap:anywhere}
+.admin-market-entry small{font-size:11px;color:#718399}
+.admin-client-markets p{margin:0;font-size:12px}
+.account-photo-preview strong{overflow-wrap:anywhere}
