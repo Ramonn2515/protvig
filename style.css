@@ -182,3 +182,44 @@ header{background:#061525;border-bottom:1px solid #b58a48}
 .dashboard .admin-client-markets{background:#0b2743!important}
 .dashboard .tag{background:#164e43;color:#9ae9c5}
 @media(max-width:600px){.dashboard .container{padding:0 16px}.dashboard .dash-heading{gap:14px}.dashboard .stats{gap:12px}}
+
+
+/* ProtVig — painel premium inspirado na referência azul-marinho e ouro */
+body{background:#031427;color:#f4f6fb}
+header{background:linear-gradient(100deg,#031123,#061d34)!important;border-bottom:1px solid #9c743e!important}
+.brand svg,.brand .blue{color:#d6a45c!important}
+.dashboard.pv-layout{display:grid!important;grid-template-columns:250px minmax(0,1fr)!important;max-width:none!important;min-height:calc(100vh - 80px)!important;padding:0!important;background:radial-gradient(ellipse at 75% 0%,#092748 0%,#03172c 52%,#020f1f 100%)!important}
+.pv-sidebar{background:linear-gradient(180deg,#03162c,#021124 75%,#051e35);border-right:1px solid #21425c;padding:28px 12px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.pv-side-label{font-size:10px;letter-spacing:2px;color:#cda15d;font-weight:800;padding:6px 15px 22px}
+.pv-side-link{display:flex;align-items:center;gap:14px;text-align:left;width:100%;padding:16px 17px;border-radius:8px;color:#e1e9f4;background:transparent;font-size:13px;font-weight:600;border-left:3px solid transparent;transition:.2s}
+.pv-side-link svg{flex-shrink:0}
+.pv-side-link:hover{background:#102e4a;color:#f6c779}
+.pv-side-link.active{color:#f2bd65;background:linear-gradient(90deg,#17344f,#0b2037);border-left-color:#d6a052}
+.pv-side-divider{height:1px;background:#24435b;margin:16px 12px}
+.pv-side-footer{margin-top:auto;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;gap:17px;padding:22px 18px;color:#d9a35b;background:radial-gradient(ellipse at 25% 80%,#173a57,#03172b 68%);border-radius:12px}
+.pv-side-footer strong{font-size:21px;line-height:1.3;font-weight:500}
+.pv-main{min-width:0;width:100%;padding:34px 0 90px}
+.pv-main>.container{max-width:1450px;padding:0 28px}
+.pv-main .dash-heading{padding:0 6px 22px}
+.pv-main .dash-heading h1{color:#f6f7fb!important}
+.pv-main .dash-heading p{color:#a8b9cc!important}
+.pv-main .market-selector{background:linear-gradient(115deg,#071d34,#0b2a49)!important;border:1px solid #38546b!important;border-left:4px solid #d4a155!important;border-radius:14px!important;padding:28px!important}
+.pv-main .market-identity h2{font-size:clamp(20px,2.1vw,30px)!important}
+.pv-main .stats{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important}
+.pv-main .stats>div,.pv-main .stats>button{background:linear-gradient(135deg,#092441,#06182e)!important;border:1px solid #2a506f!important;border-radius:13px!important;min-height:135px;position:relative;overflow:hidden}
+.pv-main .stats>div:after,.pv-main .stats>button:after{content:'';position:absolute;width:130px;height:50px;right:-25px;bottom:-24px;transform:rotate(-15deg);background:radial-gradient(ellipse,#b78c4955,transparent 70%);pointer-events:none}
+.pv-main .dashboard-shortcuts{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important}
+.pv-main .dashboard-shortcuts button{min-height:68px!important;justify-content:flex-start!important;text-align:left!important;border:1px solid #355a77!important;background:linear-gradient(120deg,#0a2745,#061a30)!important}
+.pv-main .dashboard-shortcuts button svg{color:#e3b066!important}
+.pv-main .panel{background:linear-gradient(140deg,#092640,#04172d)!important;border:1px solid #2b5270!important;border-radius:14px!important;box-shadow:0 12px 36px #0003!important}
+.pv-main .reports-panel{border-left:4px solid #cda05a!important}
+.pv-main .reports-panel h2 svg{color:#d8a759!important}
+.pv-main .bar-track{background:#071b30!important;border-bottom:1px solid #72849a!important}
+.pv-main .bar-fill{background:linear-gradient(180deg,#eac57e,#b78338)!important;box-shadow:0 0 12px #d1a45c33}
+.pv-main .bar-value,.pv-main .bar-label{color:#dce7f3!important}
+.pv-main .chart-summary strong{color:#eac57e!important}
+.pv-main .kicker{color:#dfb26c!important}
+.pv-main .account-actions .btn{border-color:#456079!important}
+.pv-main .market-plan-note .active-dot{background:#1dc989!important}
+@media(max-width:1050px){.dashboard.pv-layout{grid-template-columns:205px minmax(0,1fr)!important}.pv-main .dashboard-shortcuts{grid-template-columns:1fr!important}.pv-main>.container{padding:0 20px}}
+@media(max-width:700px){.dashboard.pv-layout{display:block!important}.pv-sidebar{position:relative;flex-direction:row;flex-wrap:wrap;padding:12px;gap:5px;border-right:0;border-bottom:1px solid #284967}.pv-side-label,.pv-side-divider,.pv-side-footer{display:none}.pv-side-link{width:auto;flex:1 1 135px;padding:12px;font-size:12px}.pv-main{padding-top:22px}.pv-main>.container{padding:0 15px}.pv-main .stats{grid-template-columns:1fr!important}.pv-main .market-selector{padding:20px!important}}
