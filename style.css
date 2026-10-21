@@ -223,3 +223,18 @@ header{background:linear-gradient(100deg,#031123,#061d34)!important;border-botto
 .pv-main .market-plan-note .active-dot{background:#1dc989!important}
 @media(max-width:1050px){.dashboard.pv-layout{grid-template-columns:205px minmax(0,1fr)!important}.pv-main .dashboard-shortcuts{grid-template-columns:1fr!important}.pv-main>.container{padding:0 20px}}
 @media(max-width:700px){.dashboard.pv-layout{display:block!important}.pv-sidebar{position:relative;flex-direction:row;flex-wrap:wrap;padding:12px;gap:5px;border-right:0;border-bottom:1px solid #284967}.pv-side-label,.pv-side-divider,.pv-side-footer{display:none}.pv-side-link{width:auto;flex:1 1 135px;padding:12px;font-size:12px}.pv-main{padding-top:22px}.pv-main>.container{padding:0 15px}.pv-main .stats{grid-template-columns:1fr!important}.pv-main .market-selector{padding:20px!important}}
+
+
+/* Menu lateral: foto do mercado e identidade, conforme referência aprovada */
+.pv-sidebar{padding-top:22px!important}
+.pv-side-profile{display:flex;align-items:center;flex-direction:column;gap:9px;text-align:center;padding:0 12px 26px;margin-bottom:8px;min-width:0}
+.pv-side-avatar{position:relative;width:104px;height:104px;border-radius:50%;background:linear-gradient(145deg,#164265,#09223d);border:2px solid #d5a45c;display:flex;align-items:center;justify-content:center;color:#d5a45c;box-shadow:0 8px 30px #0006}
+.pv-side-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.pv-avatar-edit{position:absolute;bottom:1px;right:0;width:31px;height:31px;border-radius:50%;background:#142e49;color:#e3b364;border:1px solid #bb8e4e;display:grid;place-items:center;font-size:19px;line-height:1}
+.pv-avatar-edit:hover{background:#234a6b}
+.pv-side-profile>strong{font-size:15px;color:#fff;line-height:1.35;overflow-wrap:anywhere}
+.pv-side-profile>small{font-size:10px;color:#a9bdd0;max-width:100%;overflow-wrap:anywhere}
+.pv-side-plan{display:inline-block;margin-top:3px;background:#0e6b4b;color:#e3fff1;padding:5px 12px;border-radius:5px;font-size:11px;font-weight:700}
+.pv-side-label{padding:9px 15px 12px!important}
+.pv-side-link{padding:15px 16px!important}
+@media(max-width:700px){.pv-side-profile{flex-basis:100%;padding:6px 0 12px;margin:0}.pv-side-avatar{width:80px;height:80px}.pv-side-label{display:block!important;flex-basis:100%;padding:10px 8px!important}.pv-sidebar{align-items:stretch}}
