@@ -137,3 +137,48 @@ header{background:#081b30;border-bottom:2px solid #b9954f}
 .dashboard .bar-value,.dashboard .bar-label{color:#e9f2fc}
 .dashboard .notice{background:#193f60;color:#fff;border:1px solid #bd9b61}
 @media(max-width:600px){.dashboard{background:#0b2745!important}.dashboard .panel{padding:20px}}
+
+/* ProtVig Premium — referência aprovada: superfícies inteiramente azul-marinho e acentos dourados */
+:root{--pv-night:#061525;--pv-panel:#0b2440;--pv-panel-raised:#103151;--pv-gold:#d3a65c;--pv-text:#f4f7fc;--pv-muted:#b4c6d9}
+header{background:#061525;border-bottom:1px solid #b58a48}
+.brand svg,.brand .blue{color:var(--pv-gold)}
+.dashboard{background:radial-gradient(ellipse at 80% 0%,#123456 0%,#081c32 44%,#04111f 100%)!important}
+.dashboard .container{max-width:1260px}
+.dashboard .dash-heading{padding-bottom:16px;border-bottom:1px solid #25435e}
+.dashboard .dash-heading h1{color:#fff!important}
+.dashboard .dash-heading p{color:#b6c7d9!important}
+.dashboard .panel,.dashboard .market-selector,.dashboard .stats>div,.dashboard .stats>button{
+ background:linear-gradient(135deg,#102d4b 0%,#091f37 100%)!important;
+ border-color:#34536e!important;
+ box-shadow:0 14px 32px #0005!important;
+ color:#f4f7fc!important
+}
+.dashboard .market-selector{border-left:5px solid var(--pv-gold)!important}
+.dashboard .panel h2,.dashboard .panel h3,.dashboard .market-identity h2,.dashboard .stats strong{color:#fff!important}
+.dashboard .panel p,.dashboard .panel small,.dashboard .panel label,.dashboard .stats span,.dashboard .stats small,.dashboard .market-subtitle{color:var(--pv-muted)!important}
+.dashboard .stats>div,.dashboard .stats>button{border-top:2px solid #c89c54!important}
+.dashboard .stats svg,.dashboard .panel h2 svg,.dashboard .kicker{color:var(--pv-gold)!important}
+.dashboard .dashboard-shortcuts .btn,.dashboard .btn.ghost-dark{
+ background:linear-gradient(130deg,#113353,#0a2038)!important;
+ border:1px solid #49657c!important;color:#fff!important
+}
+.dashboard .dashboard-shortcuts .btn:hover,.dashboard .btn.ghost-dark:hover{border-color:var(--pv-gold)!important;background:#194264!important}
+.dashboard .btn:not(.ghost-dark):not(.outline){background:#15517b;border:1px solid #b68b4b66}
+.dashboard .btn:not(.ghost-dark):not(.outline):hover{background:#1b648f}
+.dashboard .record,.dashboard .day-empty,.dashboard .admin-client-markets,.dashboard .admin-photo-card{background:#102e4b!important;border-color:#34536e!important;color:#f4f7fc!important}
+.dashboard .record h3,.dashboard .record strong,.dashboard .admin-photo-card strong{color:#f4f7fc!important}
+.dashboard .record p,.dashboard .record small{color:#b4c6d9!important}
+.dashboard .market-plan-note{background:#153b57!important;border-color:#47627a!important;color:#e8d3a9!important}
+.dashboard .bar-track{background:#112e4a!important;border-bottom:1px solid #58728a}
+.dashboard .bar-fill{background:linear-gradient(180deg,#edc57b,#b98639)!important}
+.dashboard .bar-label,.dashboard .bar-value{color:#e8f0f8!important}
+.dashboard .protvig-calendar{background:linear-gradient(145deg,#102b49,#06172a);border-color:#47627a}
+.dashboard .protvig-calendar .calendar-day.selected{background:#c69b56;border-color:#f2d18d;color:#061525}
+.dashboard a:not(.btn){color:#dcb778}
+.dashboard input:not([type=file]),.dashboard select,.dashboard textarea{background:#0a2139!important;color:#f6f9fd!important;border:1px solid #58748e!important;outline-color:#d3a65c}
+.dashboard input::placeholder,.dashboard textarea::placeholder{color:#91a8bd}
+.dashboard select option{background:#0a2139;color:#f6f9fd}
+.dashboard .market-selector select{background:#0a2139!important;color:#f6f9fd!important}
+.dashboard .admin-client-markets{background:#0b2743!important}
+.dashboard .tag{background:#164e43;color:#9ae9c5}
+@media(max-width:600px){.dashboard .container{padding:0 16px}.dashboard .dash-heading{gap:14px}.dashboard .stats{gap:12px}}
