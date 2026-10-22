@@ -354,3 +354,11 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-banner-switcher label{color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.65)!important}
 .pv-banner-switcher select{background:rgba(237,246,255,.10)!important;border:1px solid rgba(255,255,255,.35)!important;color:#fff!important;backdrop-filter:blur(3px)!important;-webkit-backdrop-filter:blur(3px)!important}
 .pv-banner-switcher select option{background:#0b2845;color:#fff}
+
+/* Gerenciamento de clientes no painel ADM */
+.pv-admin-manage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
+.pv-admin-manage-card{display:flex;flex-direction:column;gap:12px;padding:18px;border:1px solid rgba(170,190,211,.35);border-radius:14px;background:rgba(236,244,252,.07);min-width:0}
+.pv-admin-manage-card>strong{overflow-wrap:anywhere}.pv-admin-manage-card>small{opacity:.78}
+.pv-admin-manage-editor{display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(150,170,195,.3);padding-top:14px}
+.pv-admin-manage-editor .market-checks{max-height:210px;overflow:auto}
+.pv-admin-manage-editor input[type=password]{width:100%;box-sizing:border-box;padding:12px;border:1px solid #a7b4c4;border-radius:9px;color:#0b2845;background:#fff}
