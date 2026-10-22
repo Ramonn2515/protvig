@@ -348,3 +348,9 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-banner-switcher label{font-size:12px;font-weight:700;color:#fff!important;line-height:1.4}
 .pv-banner-switcher select{width:100%;max-width:100%;min-width:0;min-height:47px;padding:10px 14px;background:#0b2845!important;color:#fff!important;border:1px solid #6d88a3;border-radius:9px;font-weight:700;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:850px){.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{flex-direction:column!important;align-items:stretch!important;gap:16px!important}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{max-width:100%!important}.pv-banner-switcher{width:100%;max-width:100%;box-sizing:border-box}}
+
+/* Efeito vidro translúcido no seletor de mercado do banner */
+.pv-banner-switcher{background:rgba(235,244,252,.12)!important;border:1px solid rgba(255,255,255,.28)!important;backdrop-filter:blur(9px)!important;-webkit-backdrop-filter:blur(9px)!important;box-shadow:0 8px 28px rgba(0,0,0,.12)!important}
+.pv-banner-switcher label{color:#fff!important;text-shadow:0 1px 4px rgba(0,0,0,.65)!important}
+.pv-banner-switcher select{background:rgba(237,246,255,.10)!important;border:1px solid rgba(255,255,255,.35)!important;color:#fff!important;backdrop-filter:blur(3px)!important;-webkit-backdrop-filter:blur(3px)!important}
+.pv-banner-switcher select option{background:#0b2845;color:#fff}
