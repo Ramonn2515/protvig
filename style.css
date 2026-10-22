@@ -325,3 +325,12 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-banner-market-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 @media(max-width:850px){.pv-banner-market-photo{width:170px;height:140px;flex-basis:170px}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-child{max-width:calc(100% - 190px)}}
 @media(max-width:600px){.pv-banner-market-photo{width:100px;height:100px;flex-basis:100px;border-width:3px}.pv-banner-market-photo svg{width:38px}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-child{max-width:calc(100% - 110px)}}
+
+/* Pôster panorâmico do mercado selecionado, sem remover o seletor */
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{position:relative!important;isolation:isolate;min-height:255px!important;overflow:hidden!important;display:flex!important;align-items:center!important;background:#09243f!important;padding:clamp(24px,4vw,44px)!important}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner::after{display:none!important}
+.pv-client-market-banner .pv-market-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2;display:block}
+.pv-client-market-banner::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,19,37,.97) 0%,rgba(4,23,43,.88) 32%,rgba(5,24,43,.56) 65%,rgba(5,24,43,.2) 100%);z-index:-1;pointer-events:none}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{position:relative;z-index:1;max-width:85%}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner h1,.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner p{color:#fff!important;text-shadow:0 2px 8px #000a}
+@media(max-width:600px){.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{min-height:215px!important}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{max-width:100%}.pv-client-market-banner::before{background:linear-gradient(90deg,#031325ef,#031325a3)}}
