@@ -271,3 +271,19 @@ header{background:linear-gradient(100deg,#031123,#061d34)!important;border-botto
 .pv-contact-link strong{font-size:13px;color:#1864a0!important;letter-spacing:.04em}
 .pv-contact-link span{font-size:clamp(17px,2vw,23px);font-weight:800;color:#07274b!important}
 .pv-contact-link:hover{background:#dcebf8;border-color:#5999c8}
+
+
+/* Foto do mercado no cabeçalho, sem cartão redundante */
+.dashboard.pv-layout .pv-main .dash-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 28px!important;margin-bottom:22px!important;min-height:175px}
+.dashboard.pv-layout .pv-main .dash-heading:after{display:none!important}
+.pv-welcome-copy{position:relative;z-index:1;min-width:0;flex:1}
+.pv-heading-market{display:flex;align-items:center;gap:14px;min-width:0;max-width:40%;position:relative;z-index:1;color:#d8a85f;flex-shrink:0}
+.pv-heading-market>img{height:118px;width:190px;max-width:55%;object-fit:cover;border:2px solid #c99a54;border-radius:13px;box-shadow:0 10px 30px #0005}
+.pv-heading-market-meta{display:flex;flex-direction:column;gap:7px;min-width:0}
+.pv-heading-market-meta strong{font-size:14px;color:#fff;overflow-wrap:anywhere}
+.pv-heading-market-meta span{font-size:12px;color:#b5d0e5}
+.pv-compact-market-switch{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding:12px 16px;background:#0b2540;border:1px solid #34536b;border-radius:10px}
+.pv-compact-market-switch label{font-weight:700;color:#d4a65e;white-space:nowrap}
+.pv-compact-market-switch select{flex:1;min-width:0;background:#071b30;color:#fff;border:1px solid #4a6780;padding:10px;border-radius:8px}
+@media(max-width:850px){.dashboard.pv-layout .pv-main .dash-heading{flex-wrap:wrap}.pv-heading-market{max-width:100%;width:100%}.pv-heading-market>img{max-width:150px;height:90px}}
+@media(max-width:550px){.dashboard.pv-layout .pv-main .dash-heading{padding:18px!important}.pv-heading-market>img{width:112px;height:80px}.pv-heading-market-meta strong{font-size:12px}}
