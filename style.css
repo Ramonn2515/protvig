@@ -271,3 +271,21 @@ header{background:linear-gradient(100deg,#031123,#061d34)!important;border-botto
 .pv-contact-link strong{font-size:13px;color:#1864a0!important;letter-spacing:.04em}
 .pv-contact-link span{font-size:clamp(17px,2vw,23px);font-weight:800;color:#07274b!important}
 .pv-contact-link:hover{background:#dcebf8;border-color:#5999c8}
+
+/* Cartões dos planos aprovados: azul legível sobre branco */
+.pv-plans{align-items:stretch;gap:24px}
+.pv-plans .pv-plan-card{background:#fff!important;border:1px solid #dbe5f0!important;border-radius:20px!important;box-shadow:0 14px 32px #0003!important;padding:26px!important;display:flex;flex-direction:column;min-width:0;color:#082b51!important}
+.pv-plan-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.pv-plans .pv-plan-card .kicker{font-size:13px!important;font-weight:900!important;letter-spacing:1.5px!important;color:#0872d0!important}
+.pv-plan-symbol{font-size:37px;color:#67a4e3;background:#edf5ff;border-radius:50%;width:59px;height:59px;display:grid;place-items:center}
+.pv-plans .pv-plan-card h3{font-size:clamp(22px,2vw,29px)!important;line-height:1.2!important;color:#05264c!important;margin:2px 0 23px!important;font-weight:900!important}
+.pv-plans .pv-plan-card h2{font-size:clamp(22px,2vw,29px)!important;color:#075099!important;display:flex;align-items:center;gap:13px;margin:0 0 22px!important;font-weight:900!important}
+.pv-plans .pv-plan-card h2 svg{color:#0765b5;flex-shrink:0}
+.pv-plans .pv-plan-card ul{list-style:none;padding:0!important;margin:0 0 24px!important;display:grid;gap:18px;flex:1}
+.pv-plans .pv-plan-card li{display:flex;gap:13px;align-items:flex-start;font-size:15px!important;line-height:1.55;color:#0d4b8b!important;font-weight:550}
+.pv-plans .pv-plan-card li svg{width:23px;height:23px;min-width:23px;color:#0968ba;background:#e5f1ff;border-radius:50%;padding:3px;margin-top:1px}
+.pv-plans .pv-plan-card .btn{background:#104a7d!important;color:#fff!important;border-radius:9px!important;min-height:55px;font-weight:800!important;font-size:16px!important;margin-top:auto}
+.pv-plans .pv-plan-card .btn:hover{background:#0862aa!important}
+.pv-plan-notice{max-width:620px;margin:22px auto;padding:18px 50px 18px 20px;border:1px solid #d5a459;border-radius:12px;background:#0b2c4c;color:#fff;font-weight:700;position:relative;text-align:center}
+.pv-plan-notice button{position:absolute;right:12px;top:8px;background:transparent;border:0;color:#fff;font-size:25px;cursor:pointer}
+@media(max-width:600px){.pv-plans .pv-plan-card{padding:23px!important}.pv-plans .pv-plan-card li{font-size:14px!important}}
