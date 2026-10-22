@@ -334,3 +334,9 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{position:relative;z-index:1;max-width:85%}
 .dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner h1,.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner p{color:#fff!important;text-shadow:0 2px 8px #000a}
 @media(max-width:600px){.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{min-height:215px!important}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{max-width:100%}.pv-client-market-banner::before{background:linear-gradient(90deg,#031325ef,#031325a3)}}
+
+/* Seletor discreto abaixo do pôster, sem segundo cartão de mercado */
+.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-end!important;gap:14px!important;min-height:0!important;margin:12px 0 22px!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;position:relative!important;z-index:1!important}
+.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact label{margin:0!important;white-space:normal!important;color:#d5e5f6!important;font-weight:600}
+.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact select{width:min(100%,310px)!important;min-width:220px!important;margin:0!important}
+@media(max-width:600px){.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact{flex-direction:column!important;align-items:stretch!important;gap:8px!important}.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact select{width:100%!important;min-width:0!important}}
