@@ -30,7 +30,7 @@ Deno.serve(async(req)=>{
     const {data:authUser,error:uError}=await admin.auth.admin.getUserById(p.id);
     if(uError)continue;
     const u=authUser.user;
-    users.push({id:p.id,username:nameMap.get(p.id)||null,email:nameMap.has(p.id)?null:u.email||null,marketIds:(links||[]).filter(x=>x.user_id===p.id).map(x=>x.market_id),disabled:!!u.banned_until&&new Date(u.banned_until).getTime()>Date.now()});
+    users.push({id:p.id,username:nameMap.get(p.id)||null,email:nameMap.has(p.id)?null:u.email||null,createdAt:u.created_at||null,marketIds:(links||[]).filter(x=>x.user_id===p.id).map(x=>x.market_id),disabled:!!u.banned_until&&new Date(u.banned_until).getTime()>Date.now()});
    }
    return reply({clients:users});
   }
