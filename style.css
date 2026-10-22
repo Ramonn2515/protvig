@@ -362,3 +362,12 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-admin-manage-editor{display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(150,170,195,.3);padding-top:14px}
 .pv-admin-manage-editor .market-checks{max-height:210px;overflow:auto}
 .pv-admin-manage-editor input[type=password]{width:100%;box-sizing:border-box;padding:12px;border:1px solid #a7b4c4;border-radius:9px;color:#0b2845;background:#fff}
+
+/* Feedback claro e botão de exibir senha na gestão de clientes */
+.pv-admin-password-field{position:relative;display:flex;align-items:center}
+.pv-admin-manage-editor .pv-admin-password-field input{width:100%;padding-right:52px!important}
+.pv-admin-password-eye{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:0;border-radius:8px;background:transparent;color:#183e65;cursor:pointer}
+.pv-admin-password-eye:hover{background:#dce9f5}
+.pv-admin-manage-notice{padding:12px 14px;border-radius:9px;font-size:14px;font-weight:700;line-height:1.45;overflow-wrap:anywhere}
+.pv-admin-manage-notice.is-success{background:#d9f4e6;color:#075b36;border:1px solid #74b894}
+.pv-admin-manage-notice.is-error{background:#ffe6e6;color:#842525;border:1px solid #e7a2a2}
