@@ -287,3 +287,21 @@ header{background:linear-gradient(100deg,#031123,#061d34)!important;border-botto
 .pv-compact-market-switch select{flex:1;min-width:0;background:#071b30;color:#fff;border:1px solid #4a6780;padding:10px;border-radius:8px}
 @media(max-width:850px){.dashboard.pv-layout .pv-main .dash-heading{flex-wrap:wrap}.pv-heading-market{max-width:100%;width:100%}.pv-heading-market>img{max-width:150px;height:90px}}
 @media(max-width:550px){.dashboard.pv-layout .pv-main .dash-heading{padding:18px!important}.pv-heading-market>img{width:112px;height:80px}.pv-heading-market-meta strong{font-size:12px}}
+
+
+/* Cabeçalho panorâmico como na referência: foto do mercado ocupa o fundo */
+.dashboard.pv-layout .pv-main .dash-heading.pv-market-hero{position:relative;display:flex!important;align-items:flex-start!important;justify-content:space-between!important;min-height:235px!important;padding:24px 26px 78px!important;margin-bottom:22px!important;border-radius:13px!important;background-color:#071b30!important;background-size:cover!important;background-position:center 47%!important;overflow:hidden!important;border:1px solid #214764!important}
+.dashboard.pv-layout .pv-main .dash-heading.pv-market-hero:after{display:none!important}
+.pv-market-hero .pv-welcome-copy{position:relative;z-index:1;max-width:65%;flex:1}
+.pv-market-hero .pv-welcome-copy h1{font-size:clamp(22px,2.3vw,35px)!important;margin:8px 0!important;text-shadow:0 2px 9px #0009}
+.pv-market-hero .pv-welcome-copy p{font-size:14px!important;max-width:440px;color:#e2edf8!important;text-shadow:0 2px 6px #000b}
+.pv-hero-market-info{position:absolute;right:12px;bottom:12px;display:flex;align-items:center;gap:10px;z-index:2;width:min(470px,64%);padding:10px 12px;border-radius:11px;background:linear-gradient(120deg,#06172de8,#0b2948eb);border:1px solid #b48b4a8c;box-shadow:0 8px 25px #0006;backdrop-filter:blur(5px)}
+.pv-hero-market-photo{width:54px;height:54px;flex:0 0 54px;display:flex;align-items:center;justify-content:center;overflow:hidden;border:2px solid #d6a65e;border-radius:50%;color:#d6a65e}
+.pv-hero-market-photo img{width:100%;height:100%;object-fit:cover}
+.pv-hero-market-name{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.pv-hero-market-name small{font-size:9px;letter-spacing:1px;color:#d5b37b}
+.pv-hero-market-name strong{font-size:13px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pv-hero-market-name span{font-size:11px;color:#c0d6e8}
+.pv-hero-market-info select{max-width:125px;min-width:0;padding:9px 6px;background:#061b30;color:#fff;border:1px solid #c99d57;border-radius:7px;font-size:11px}
+@media(max-width:800px){.dashboard.pv-layout .pv-main .dash-heading.pv-market-hero{min-height:240px!important;padding:20px 16px 100px!important}.pv-market-hero .pv-welcome-copy{max-width:100%}.pv-hero-market-info{width:calc(100% - 24px);right:12px}.pv-hero-market-info select{max-width:95px}}
+@media(max-width:480px){.dashboard.pv-layout .pv-main .dash-heading.pv-market-hero{min-height:240px!important;padding:16px 12px 106px!important}.pv-market-hero .pv-welcome-copy p{font-size:12px!important}.pv-hero-market-photo{width:42px;height:42px;flex-basis:42px}.pv-hero-market-info{padding:8px;gap:7px}.pv-hero-market-name strong{font-size:11px}}
