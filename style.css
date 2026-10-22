@@ -289,3 +289,17 @@ header{background:linear-gradient(100deg,#031123,#061d34)!important;border-botto
 .pv-plan-notice{max-width:620px;margin:22px auto;padding:18px 50px 18px 20px;border:1px solid #d5a459;border-radius:12px;background:#0b2c4c;color:#fff;font-weight:700;position:relative;text-align:center}
 .pv-plan-notice button{position:absolute;right:12px;top:8px;background:transparent;border:0;color:#fff;font-size:25px;cursor:pointer}
 @media(max-width:600px){.pv-plans .pv-plan-card{padding:23px!important}.pv-plans .pv-plan-card li{font-size:14px!important}}
+
+
+/* Contraste definitivo dos cartões de planos — referência aprovada */
+body .pv-plans .pv-plan-card,
+body .pv-plans .pv-plan-card *:not(button):not(button *){color:#082d58!important;opacity:1!important;text-shadow:none!important;-webkit-text-fill-color:currentColor!important}
+body .pv-plans .pv-plan-card{background:#fff!important}
+body .pv-plans .pv-plan-card h3{color:#052a56!important;-webkit-text-fill-color:#052a56!important;font-weight:900!important}
+body .pv-plans .pv-plan-card h2{color:#075091!important;-webkit-text-fill-color:#075091!important;font-weight:900!important}
+body .pv-plans .pv-plan-card li{color:#103c73!important;-webkit-text-fill-color:#103c73!important;font-weight:600!important}
+body .pv-plans .pv-plan-card .kicker{color:#0873c7!important;-webkit-text-fill-color:#0873c7!important}
+body .pv-plans .pv-plan-card li svg,
+body .pv-plans .pv-plan-card h2 svg{color:#0873c7!important;stroke:#0873c7!important}
+body .pv-plans .pv-plan-card .btn,
+body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color:#fff!important;opacity:1!important}
