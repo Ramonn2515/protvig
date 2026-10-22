@@ -371,3 +371,71 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-admin-manage-notice{padding:12px 14px;border-radius:9px;font-size:14px;font-weight:700;line-height:1.45;overflow-wrap:anywhere}
 .pv-admin-manage-notice.is-success{background:#d9f4e6;color:#075b36;border:1px solid #74b894}
 .pv-admin-manage-notice.is-error{background:#ffe6e6;color:#842525;border:1px solid #e7a2a2}
+
+/* PROTVIG | gestão administrativa dedicada */
+.pv-adm-management{color:#e8f1ff;display:flex;flex-direction:column;gap:20px}
+.pv-adm-management-heading{background:linear-gradient(110deg,#061a30,#0a2949);border:1px solid #214866;border-radius:14px;padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.pv-adm-management-heading h1{display:flex;align-items:center;gap:14px;font-size:clamp(23px,2.5vw,35px);margin:8px 0}
+.pv-adm-management-heading h1 svg{color:#dba451}
+.pv-adm-management-heading p{color:#b3c7dd;margin:0}
+.pv-adm-new{background:#e4ad58!important;color:#071a2d!important;white-space:nowrap}
+.pv-adm-management-body{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr);gap:20px;align-items:start}
+.pv-adm-client-list,.pv-adm-client-details{min-width:0}
+.pv-adm-filters{display:grid;grid-template-columns:minmax(150px,2fr) minmax(125px,1fr) minmax(125px,1fr);gap:10px;margin-bottom:17px}
+.pv-adm-filters input,.pv-adm-filters select{width:100%;min-width:0;box-sizing:border-box;background:#071d35;color:#eaf3ff;border:1px solid #305473;border-radius:9px;padding:14px 12px;font-size:13px}
+.pv-adm-client-table,.pv-adm-client-details{border:1px solid #234866;border-radius:12px;background:#071b31;overflow:hidden}
+.pv-adm-table-head,.pv-adm-client-row{display:grid;grid-template-columns:minmax(160px,2.5fr) minmax(65px,1fr) 76px minmax(83px,1fr) 48px;align-items:center;gap:10px;padding:14px 16px}
+.pv-adm-table-head{font-size:11px;color:#afc2d9;font-weight:800}
+.pv-adm-client-row{width:100%;border:0;border-top:1px solid #163a58;background:transparent;color:#e8f1ff;text-align:left;cursor:pointer;font:inherit;font-size:13px;min-height:70px}
+.pv-adm-client-row:hover,.pv-adm-client-row.selected{background:#10385d}
+.pv-adm-client-identity{display:flex;align-items:center;gap:10px;min-width:0}
+.pv-adm-client-identity>span:last-child{display:flex;flex-direction:column;min-width:0;gap:4px}
+.pv-adm-client-identity strong,.pv-adm-client-identity small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pv-adm-client-identity small{color:#a9bdd4;font-size:11px}
+.pv-adm-initials,.pv-adm-big-avatar{display:flex;align-items:center;justify-content:center;background:linear-gradient(140deg,#387cd4,#aec7e9);color:#07213b;border-radius:50%;font-weight:800;flex-shrink:0}
+.pv-adm-initials{width:38px;height:38px;font-size:13px}
+.pv-adm-plan{display:inline-block;padding:7px 9px;background:#0b487d;border-radius:9px;color:#dceeff}
+.pv-adm-plan.prime{background:#57421f;color:#f9cb77}
+.pv-adm-status{display:inline-flex;align-items:center;justify-content:center;padding:7px 10px;border-radius:20px;background:#075a43;color:#86e8b6;font-size:12px;font-weight:800;white-space:nowrap}
+.pv-adm-status.disabled{background:#552b37;color:#ff9aa8}
+.pv-adm-row-action{font-size:23px;text-align:center}
+.pv-adm-pagination{padding:15px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#aec4da;font-size:12px}
+.pv-adm-pagination>div{display:flex;align-items:center;gap:9px}
+.pv-adm-pagination button{background:#0a2845;border:1px solid #325775;border-radius:8px;color:#eaf2ff;padding:6px 12px;cursor:pointer}
+.pv-adm-pagination button:disabled{opacity:.35;cursor:default}
+.pv-adm-details-title{padding:16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #21415c}
+.pv-adm-details-title h3{margin:0;font-size:18px}
+.pv-adm-details-title button{background:none;border:0;color:#bfd1e6;cursor:pointer}
+.pv-adm-empty{padding:22px;color:#b6cbe0}
+.pv-adm-detail-profile{padding:18px;display:flex;gap:12px;align-items:center}
+.pv-adm-big-avatar{width:58px;height:58px;font-size:19px;overflow:hidden}
+.pv-adm-big-avatar img{width:100%;height:100%;object-fit:cover}
+.pv-adm-detail-profile>div:nth-child(2){display:flex;flex-direction:column;gap:5px;min-width:0;flex:1;overflow-wrap:anywhere}
+.pv-adm-detail-profile small{color:#b4c6d9}
+.pv-adm-tabs{display:flex;border-bottom:1px solid #244563;overflow-x:auto}
+.pv-adm-tabs button{border:0;border-bottom:3px solid transparent;padding:12px 9px;flex:1;background:none;color:#bdd0e5;cursor:pointer;font-size:12px;white-space:nowrap}
+.pv-adm-tabs button.active{border-color:#e2aa55;color:white;font-weight:800}
+.pv-adm-info-card,.pv-adm-linked,.pv-adm-detail-editor{margin:16px;border:1px solid #214664;border-radius:10px;padding:16px;background:#0a223c}
+.pv-adm-info-card>div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;font-size:13px}
+.pv-adm-info-card span{color:#aabed4}
+.pv-adm-info-card strong{text-align:right;overflow-wrap:anywhere}
+.pv-adm-linked{border-color:#8e713d}
+.pv-adm-linked>div{display:flex;align-items:center;gap:8px;margin-top:12px;background:#17334d;padding:12px;border-radius:8px;font-size:12px}
+.pv-adm-linked small{margin-left:auto;color:#b1c3d7}
+.pv-adm-action-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px}
+.pv-adm-action-grid button{border:1px solid #466584;border-radius:9px;padding:12px 7px;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;font-weight:700;font-size:12px}
+.pv-adm-blue{background:#1175dd;color:white}
+.pv-adm-gold{background:#e2ab58;color:#091d30}
+.pv-adm-danger{background:#2b1725;color:#ff898e;border-color:#a94455!important}
+.pv-adm-detail-editor{display:flex;flex-direction:column;gap:12px}
+.pv-adm-detail-editor h4{margin:0}
+.pv-adm-detail-editor input:not([type=checkbox]){width:100%;box-sizing:border-box;padding:12px;border:1px solid #466784;border-radius:8px;background:#0c2b49;color:white}
+.pv-adm-detail-editor .market-checks{display:flex;flex-direction:column;gap:10px;max-height:300px;overflow:auto}
+.pv-adm-detail-editor .market-checks label{display:flex;align-items:center;gap:8px}
+.pv-adm-delete-area{border-top:1px solid #6d3541;margin-top:14px;padding-top:18px;display:flex;flex-direction:column;gap:12px}
+.pv-adm-delete-area p{font-size:13px;color:#ffc3c8}
+.pv-adm-delete-button{border:1px solid #db5869;background:#642436;color:white;border-radius:9px;padding:13px;cursor:pointer}
+.pv-adm-delete-button:disabled{opacity:.4;cursor:not-allowed}
+.pv-adm-secondary h1{color:#fff}
+@media(max-width:1150px){.pv-adm-management-body{grid-template-columns:1fr}.pv-adm-client-details{max-width:100%}}
+@media(max-width:680px){.pv-adm-management-heading{flex-direction:column;align-items:stretch;padding:20px}.pv-adm-filters{grid-template-columns:1fr}.pv-adm-client-table{overflow-x:auto}.pv-adm-table-head,.pv-adm-client-row{min-width:610px}.pv-adm-pagination{min-width:580px}.pv-adm-action-grid{grid-template-columns:1fr}}
