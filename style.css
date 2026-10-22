@@ -317,3 +317,11 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner p{color:#e2ecf6!important;text-shadow:0 2px 8px #000a}
 .pv-banner-market-name{display:inline-block;margin-top:14px;padding:6px 12px;background:#081c32d9;color:#edc480;border:1px solid #b78b4f;border-radius:8px;font-size:13px;font-weight:700}
 @media(max-width:600px){.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{min-height:180px!important;padding:20px!important}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div{max-width:100%}}
+
+/* Foto do mercado posicionada dentro da moldura oval à direita do cabeçalho */
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{background:#0b2844!important;justify-content:space-between!important;gap:20px!important}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner:after{display:none!important}
+.pv-banner-market-photo{width:265px;height:180px;flex:0 0 265px;border:4px solid #c49b56;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#102e4b;color:#b8c7d8;box-shadow:0 0 0 12px #d4a2580b}
+.pv-banner-market-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:850px){.pv-banner-market-photo{width:170px;height:140px;flex-basis:170px}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-child{max-width:calc(100% - 190px)}}
+@media(max-width:600px){.pv-banner-market-photo{width:100px;height:100px;flex-basis:100px;border-width:3px}.pv-banner-market-photo svg{width:38px}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-child{max-width:calc(100% - 110px)}}
