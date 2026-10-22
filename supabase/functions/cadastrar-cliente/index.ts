@@ -37,6 +37,9 @@ Deno.serve(async (req) => {
     const uniqueMarkets = [...new Set(marketIds)];
     const { data: existingMarkets, error: marketError } = await admin.from("markets").select("id").in("id", uniqueMarkets);
     if (marketError || existingMarkets?.length !== uniqueMarkets.length) return reply({ error: "Mercado inválido" }, 400);
+    const { data: owners, error: ownersError } = await admin.from("memberships").select("market_id,user_id").in("market_id", uniqueMarkets);
+    if (ownersError) return reply({ error: "Não foi possível verificar os proprietários dos mercados" }, 500);
+    if (owners?.length) return reply({ error: "Um mercado selecionado já possui proprietário. Para vendê-lo, use Transferir mercado no gerenciamento de mercados." }, 409);
     const { data: taken, error: lookupError } = byUsername ? await admin.from("client_usernames").select("user_id").eq("username", username).maybeSingle() : { data: null, error: null };
     if (lookupError) return reply({ error: "Erro ao verificar usuário" }, 500);
     if (taken) return reply({ error: "Nome de usuário já utilizado" }, 409);
