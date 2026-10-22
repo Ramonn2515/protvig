@@ -340,3 +340,11 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact label{margin:0!important;white-space:normal!important;color:#d5e5f6!important;font-weight:600}
 .dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact select{width:min(100%,310px)!important;min-width:220px!important;margin:0!important}
 @media(max-width:600px){.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact{flex-direction:column!important;align-items:stretch!important;gap:8px!important}.dashboard.pv-layout .pv-main .market-selector.pv-market-selector-compact select{width:100%!important;min-width:0!important}}
+
+/* Seletor integrado ao pôster do mercado */
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:28px!important}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{max-width:calc(100% - 360px)!important;flex:1 1 auto}
+.pv-banner-switcher{position:relative;z-index:2;display:flex;flex-direction:column;align-items:stretch;gap:10px;width:320px;max-width:38%;flex:0 0 auto;padding:15px;border-radius:12px;background:#061a30bd;border:1px solid #b48b4b80;backdrop-filter:blur(5px)}
+.pv-banner-switcher label{font-size:12px;font-weight:700;color:#fff!important;line-height:1.4}
+.pv-banner-switcher select{width:100%;max-width:100%;min-width:0;min-height:47px;padding:10px 14px;background:#0b2845!important;color:#fff!important;border:1px solid #6d88a3;border-radius:9px;font-weight:700;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:850px){.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{flex-direction:column!important;align-items:stretch!important;gap:16px!important}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div:first-of-type{max-width:100%!important}.pv-banner-switcher{width:100%;max-width:100%;box-sizing:border-box}}
