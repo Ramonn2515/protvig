@@ -27,10 +27,10 @@ Deno.serve(async (req) => {
     const username = String(body.username || "").trim().toLowerCase();
     const password = String(body.password || "");
     const marketIds = body.marketIds;
-    if (!/^[a-z][a-z0-9._-]{3,31}$/.test(username) || password.length < 12 ||
+    if (!/^[a-z][a-z0-9._-]{3,31}$/.test(username) || password.length < 8 ||
         !Array.isArray(marketIds) || marketIds.length === 0 ||
         !marketIds.every((id: unknown) => Number.isSafeInteger(id) && id > 0))
-      return reply({ error: "Verifique usuário (4 a 32 caracteres), senha (mínimo 12) e mercados" }, 400);
+      return reply({ error: "Verifique usuário (4 a 32 caracteres), senha (mínimo 8) e mercados" }, 400);
     const uniqueMarkets = [...new Set(marketIds)];
     const { data: existingMarkets, error: marketError } = await admin.from("markets").select("id").in("id", uniqueMarkets);
     if (marketError || existingMarkets?.length !== uniqueMarkets.length) return reply({ error: "Mercado inválido" }, 400);
