@@ -439,3 +439,7 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-adm-secondary h1{color:#fff}
 @media(max-width:1150px){.pv-adm-management-body{grid-template-columns:1fr}.pv-adm-client-details{max-width:100%}}
 @media(max-width:680px){.pv-adm-management-heading{flex-direction:column;align-items:stretch;padding:20px}.pv-adm-filters{grid-template-columns:1fr}.pv-adm-client-table{overflow-x:auto}.pv-adm-table-head,.pv-adm-client-row{min-width:610px}.pv-adm-pagination{min-width:580px}.pv-adm-action-grid{grid-template-columns:1fr}}
+
+.pv-adm-table-head,.pv-adm-client-row{grid-template-columns:minmax(160px,2.5fr) minmax(65px,1fr) 68px minmax(80px,1fr) 82px 40px}
+.pv-adm-created{font-size:12px;color:#b3c7dd;white-space:nowrap}
+@media(max-width:680px){.pv-adm-table-head,.pv-adm-client-row{min-width:720px}.pv-adm-pagination{min-width:690px}}
