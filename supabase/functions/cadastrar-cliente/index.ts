@@ -25,35 +25,38 @@ Deno.serve(async (req) => {
 
     const body = await req.json();
     const username = String(body.username || "").trim().toLowerCase();
+    const email = String(body.email || "").trim().toLowerCase();
+    const byUsername = Boolean(username);
+    if (byUsername === Boolean(email)) return reply({ error: "Informe somente usuário ou e-mail" }, 400);
     const password = String(body.password || "");
     const marketIds = body.marketIds;
-    if (!/^[a-z][a-z0-9._-]{3,31}$/.test(username) || password.length < 8 ||
+    if (!(byUsername ? /^[a-z][a-z0-9._-]{3,31}$/.test(username) : /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) || password.length < 8 ||
         !Array.isArray(marketIds) || marketIds.length === 0 ||
         !marketIds.every((id: unknown) => Number.isSafeInteger(id) && id > 0))
       return reply({ error: "Verifique usuário (4 a 32 caracteres), senha (mínimo 8) e mercados" }, 400);
     const uniqueMarkets = [...new Set(marketIds)];
     const { data: existingMarkets, error: marketError } = await admin.from("markets").select("id").in("id", uniqueMarkets);
     if (marketError || existingMarkets?.length !== uniqueMarkets.length) return reply({ error: "Mercado inválido" }, 400);
-    const { data: taken, error: lookupError } = await admin.from("client_usernames").select("user_id").eq("username", username).maybeSingle();
+    const { data: taken, error: lookupError } = byUsername ? await admin.from("client_usernames").select("user_id").eq("username", username).maybeSingle() : { data: null, error: null };
     if (lookupError) return reply({ error: "Erro ao verificar usuário" }, 500);
     if (taken) return reply({ error: "Nome de usuário já utilizado" }, 409);
 
     // E-mail técnico não é informado nem utilizado pelo cliente. Não habilitar envio de e-mails para este domínio.
-    const internalEmail = `client-${crypto.randomUUID()}@protvig.pages.dev`;
+    const internalEmail = byUsername ? `client-${crypto.randomUUID()}@protvig.pages.dev` : email;
     const { data: created, error: createError } = await admin.auth.admin.createUser({
       email: internalEmail, password, email_confirm: true,
     });
     if (createError || !created.user) return reply({ error: createError?.message || "Erro ao criar cliente" }, 400);
     const userId = created.user.id;
     const { error: profileError2 } = await admin.from("profiles").upsert({ id: userId, role: "client" });
-    const { error: usernameError } = profileError2 ? { error: profileError2 } : await admin.from("client_usernames").insert({ user_id: userId, username });
+    const { error: usernameError } = profileError2 || !byUsername ? { error: profileError2 || null } : await admin.from("client_usernames").insert({ user_id: userId, username });
     const { error: membershipError } = profileError2 || usernameError ? { error: profileError2 || usernameError } :
       await admin.from("memberships").insert(uniqueMarkets.map(marketId => ({ user_id: userId, market_id: marketId })));
     if (membershipError) {
       const { error: cleanupError } = await admin.auth.admin.deleteUser(userId);
       return reply({ error: cleanupError ? "Cadastro incompleto: verifique o usuário no Supabase" : usernameError?.code === "23505" ? "Nome de usuário já utilizado" : "Não foi possível concluir o cadastro" }, 500);
     }
-    return reply({ success: true, userId, username, message: "Cliente cadastrado com sucesso" });
+    return reply({ success: true, userId, ...(byUsername ? { username } : { email }), message: "Cliente cadastrado com sucesso" });
   } catch {
     return reply({ error: "Não foi possível processar a solicitação" }, 500);
   }
