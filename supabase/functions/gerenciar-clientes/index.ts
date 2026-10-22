@@ -35,9 +35,12 @@ Deno.serve(async(req)=>{
    return reply({clients:users});
   }
   const id=String(body.userId||"");
-  if(!/^[0-9a-f]{8}-[0-9a-f-]{27,}$/i.test(id))return reply({error:"Cliente inválido"},400);
-  const {data:target,error:targetError}=await admin.from("profiles").select("role").eq("id",id).single();
-  if(targetError||target?.role!=="client")return reply({error:"Cliente não encontrado"},404);
+  const marketAction=["market-details","market-delete","market-transfer"].includes(action)||(["photo-ticket","photo-save"].includes(action)&&body.kind==="market");
+  if(!marketAction){
+   if(!/^[0-9a-f]{8}-[0-9a-f-]{27,}$/i.test(id))return reply({error:"Cliente inválido"},400);
+   const {data:target,error:targetError}=await admin.from("profiles").select("role").eq("id",id).single();
+   if(targetError||target?.role!=="client")return reply({error:"Cliente não encontrado"},404);
+  }
   if(action==="client-details"){
    const displayName=String(body.displayName||"").trim();
    if(!displayName||displayName.length>100)return reply({error:"Informe um nome de até 100 caracteres"},400);
