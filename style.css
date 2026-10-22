@@ -443,3 +443,21 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 .pv-adm-table-head,.pv-adm-client-row{grid-template-columns:minmax(160px,2.5fr) minmax(65px,1fr) 68px minmax(80px,1fr) 82px 40px}
 .pv-adm-created{font-size:12px;color:#b3c7dd;white-space:nowrap}
 @media(max-width:680px){.pv-adm-table-head,.pv-adm-client-row{min-width:720px}.pv-adm-pagination{min-width:690px}}
+
+/* Gestão separada: clientes e mercados */
+.pv-adm-list-avatar{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.pv-adm-photo-edit{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.pv-adm-photo-edit>img{width:74px;height:74px;object-fit:cover;border-radius:50%;border:2px solid #e2aa55}
+.pv-adm-photo-edit>input[type=file]{flex:1;min-width:170px;padding:10px!important}
+.pv-adm-market-head,.pv-adm-market-row{display:grid;grid-template-columns:minmax(170px,2fr) minmax(130px,1.4fr) 90px;gap:12px;align-items:center;padding:16px;border-bottom:1px solid #21435e}
+.pv-adm-market-head{font-size:11px;font-weight:800;color:#a9bfd7}
+.pv-adm-market-row{width:100%;text-align:left;background:transparent;color:#eaf3ff;border-left:0;border-right:0;border-top:0;cursor:pointer;font:inherit;font-size:13px}
+.pv-adm-market-row:hover,.pv-adm-market-row.selected{background:#143b60}
+.pv-adm-market-row>span:nth-child(2){overflow-wrap:anywhere}
+.pv-adm-market-row .pv-adm-plan{justify-self:start}
+.pv-adm-warning{color:#ffb5a3;font-size:11px}
+.pv-adm-detail-profile{display:flex;align-items:center;gap:14px}
+.pv-adm-detail-profile>div:last-child{display:flex;flex-direction:column;gap:5px;overflow-wrap:anywhere}
+.pv-adm-detail-profile small{color:#a9bfd7}
+.pv-adm-detail-editor select{width:100%;min-width:0;padding:12px;background:#0c2b49;color:white;border:1px solid #466784;border-radius:8px}
+@media(max-width:680px){.pv-adm-market-head,.pv-adm-market-row{min-width:500px}}
