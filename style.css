@@ -309,3 +309,11 @@ body .pv-plans .pv-plan-card .btn *{color:#fff!important;-webkit-text-fill-color
 
 /* Legenda visual das cores no manual do cliente */
 .pv-manual-legend{display:grid;gap:14px;margin:18px 0 22px}.pv-manual-legend>div{display:flex;align-items:flex-start;gap:13px;padding:13px 15px;background:#102e4b;border:1px solid #30536f;border-radius:12px;color:#d5e5f6;line-height:1.6}.pv-manual-legend strong{color:#fff}.pv-manual-dot{display:inline-block;flex:0 0 18px;width:18px;height:18px;margin-top:4px;border-radius:50%;border:2px solid transparent}.pv-dot-blue{background:#1476eb}.pv-dot-green{background:#20bf88}.pv-dot-gray{background:#596b83}.pv-dot-today{background:#fff;border-color:#398cf6}
+
+/* Foto panorâmica automática do mercado no painel do cliente */
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{background-color:#071d34!important;background-size:cover!important;background-position:center!important;min-height:195px!important;display:flex!important;align-items:center!important;padding:30px!important;border:1px solid #345674!important;overflow:hidden!important}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div{position:relative;z-index:1;max-width:75%}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner h1{color:#fff!important;text-shadow:0 2px 8px #0009}
+.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner p{color:#e2ecf6!important;text-shadow:0 2px 8px #000a}
+.pv-banner-market-name{display:inline-block;margin-top:14px;padding:6px 12px;background:#081c32d9;color:#edc480;border:1px solid #b78b4f;border-radius:8px;font-size:13px;font-weight:700}
+@media(max-width:600px){.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner{min-height:180px!important;padding:20px!important}.dashboard.pv-layout .pv-main .dash-heading.pv-client-market-banner>div{max-width:100%}}
