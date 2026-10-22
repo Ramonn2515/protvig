@@ -38,6 +38,16 @@ Deno.serve(async(req)=>{
   if(!/^[0-9a-f]{8}-[0-9a-f-]{27,}$/i.test(id))return reply({error:"Cliente inválido"},400);
   const {data:target,error:targetError}=await admin.from("profiles").select("role").eq("id",id).single();
   if(targetError||target?.role!=="client")return reply({error:"Cliente não encontrado"},404);
+  if(action==="delete"){
+   if(body.confirmation!=="EXCLUIR")return reply({error:"Confirmação de exclusão inválida"},400);
+   const {error:deleteError}=await admin.auth.admin.deleteUser(id);
+   if(deleteError)return reply({error:"Não foi possível excluir a conta. Verifique se há vínculos que impedem a exclusão: "+deleteError.message},409);
+   const {error:membersError}=await admin.from("memberships").delete().eq("user_id",id);
+   const {error:namesError}=await admin.from("client_usernames").delete().eq("user_id",id);
+   const {error:profileError}=await admin.from("profiles").delete().eq("id",id);
+   if(membersError||namesError||profileError)return reply({success:true,warning:"Conta de acesso excluída. Alguns vínculos residuais precisam de revisão administrativa."});
+   return reply({success:true});
+  }
   if(action==="password"){
    const password=String(body.password||"");
    if(password.length<8||password.length>256)return reply({error:"Senha deve ter pelo menos 8 caracteres"},400);
